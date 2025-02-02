@@ -1,9 +1,11 @@
+import '../styles/style.css';
+import Login from'./Login'
+
+
 function App() {
   return (
-    <div>
-      <h1>papap</h1>
-    </div>
-  );
+    <Login />
+  )
 }
 
 export default App;
