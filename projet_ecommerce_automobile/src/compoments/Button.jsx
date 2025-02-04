@@ -1,9 +1,9 @@
 import React from "react";
-
-const Button = ({ type = "button", onClick, children, bgColor = "bg-blueCustom", textColor = "text-white", padding = "p-2"}) => {
+const Button = ({ type = "button", onClick, children, bgColor = "bg-blueCustom", 
+                  textColor = "text-white", width="w-fit", border=""}) => {
   return (
     <button 
-      className={`rounded ${bgColor} ${textColor} ${padding} hover:opacity-80 transition`}
+      className={`rounded ${bgColor} ${textColor} ${width} ${border} py-2 hover:opacity-80 transition`}
       type={type}
       onClick={onClick}
     >
@@ -11,18 +11,4 @@ const Button = ({ type = "button", onClick, children, bgColor = "bg-blueCustom",
     </button>
   );
 }
-
-/*
-const Button = (props) => {
-  return (
-    <button 
-      className={"p-2"} 
-      type={props.type || "button"}
-      onClick={props.onClick}
-      >
-      {props.children}
-    </button>
-  );
-}
-*/
 export default Button;

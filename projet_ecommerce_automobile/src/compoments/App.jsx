@@ -1,11 +1,10 @@
 import '../styles/style.css';
-import Login from'./Login'
-
+import Menu from './Menu'
 
 function App() {
   return (
     <>
-      <Login />
+       <Menu/>
     </>
     
   )
