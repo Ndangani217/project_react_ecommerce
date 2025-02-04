@@ -43,7 +43,7 @@ function Login() {
         </div>
 
         <div className="flex justify-center items-center gap-x-4">
-          <span>New Customer ?</span>
+          <span className="font-amstelvar"> New Customer ?</span>
           <Button bgColor={"bg-transparent"} textColor={"text-blueCustom"}>Register</Button>
         </div>
     </div>

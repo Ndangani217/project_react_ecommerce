@@ -40,7 +40,7 @@ function Register() {
             </div>
     
             <div className="flex justify-center items-center gap-x-4">
-              <span>You are Already Customer ?</span>
+              <span className="font-amstelvar">You are Already Customer ?</span>
               <Button bgColor={"bg-transparent"} textColor={"text-blueCustom"}>Login</Button>
             </div>
         </div>

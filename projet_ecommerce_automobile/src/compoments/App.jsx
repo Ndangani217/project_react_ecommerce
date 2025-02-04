@@ -1,10 +1,12 @@
+import React from "react";
 import '../styles/style.css';
-import Menu from './Menu'
+import Header from "./Header";
+
 
 function App() {
   return (
     <>
-       <Menu/>
+       <Header/>
     </>
     
   )

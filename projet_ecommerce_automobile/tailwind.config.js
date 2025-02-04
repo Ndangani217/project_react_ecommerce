@@ -10,6 +10,7 @@ module.exports = {
       },
       fontFamily: {
         openSans: ["Open Sans", "sans-serif"],
+        amstelvar: ["Amstelvar Alpha", "sans-serif"], 
       },
     },
   },
