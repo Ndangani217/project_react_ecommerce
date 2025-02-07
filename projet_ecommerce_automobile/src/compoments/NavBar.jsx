@@ -1,18 +1,25 @@
-import '../styles/style.css';
+import { routes } from "../datas/Routes.js";
 
-function NavBar() {
+function NavBar({ isOpen }) {
+  const listItems = routes.map((link) => (
+    <li key={link.id} className="hover:bg-white p-2 lg:p-2 lg:items-center">
+      <a className="text-base font-amstelvar hover:text-blueCustom duration-500" href={link.href}>
+        {link.title}
+      </a>
+    </li>
+  ));
+
   return (
-      <nav className='item-center content-center'>
-          <ul className="flex flex-col lg:flex-row item-center content-center gap-x-8 text-base font-amstelvar">
-              <li><a href="#">Home</a></li>
-              <li><a href="#"> aAbout</a></li>
-              <li><a href="#"> Hot Product</a></li>
-              <li><a href="#"> Spare Parts</a></li>
-              <li><a href="#"> Appointment</a></li>
-              <li><a href="#"> Contact Us</a></li>
-          </ul>
-      </nav>
-  )
+    <nav
+      className={`w-full md:w-auto lg:w-auto absolute md:static transition-all duration-500 ease-in bg-grayCustom md:bg-transparent ${
+        isOpen ? "top-20 opacity-100" : "top-[-490px] opacity-0"
+      } md:opacity-100 md:top-auto`}
+    >
+      <ul className="flex flex-col md:flex-row py-4">
+        {listItems}
+      </ul>
+    </nav>
+  );
 }
 
 export default NavBar;

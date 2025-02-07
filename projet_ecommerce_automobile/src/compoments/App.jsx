@@ -5,10 +5,10 @@ import Header from "./Header";
 
 function App() {
   return (
-    <>
-       <Header/>
-    </>
-    
+    <div className="px-4">
+      <Header />
+      <div className="bg-indigo-600 w-full h-screen"></div>
+    </div>
   )
 }
 

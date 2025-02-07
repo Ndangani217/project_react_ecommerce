@@ -1,23 +1,32 @@
-import { BiHomeAlt2 } from "react-icons/bi";
-import { FiSearch } from "react-icons/fi";
-import { PiChatCircleBold } from "react-icons/pi";
-import { IoPricetagsOutline } from "react-icons/io5";
-
 export const routes = [
   {
+    id:1,
     title: "Home",
     href: "#",
   },
   {
-    title: "Explore",
-    href: "#",
-  },
-  {
-    title: "Pricing",
-    href: "#",
-  },
-  {
+    id:2,
     title: "About",
     href: "#",
   },
+  {
+    id:3,
+    title: "Hot Product",
+    href: "#",
+  },
+  {
+    id:4,
+    title: "Spare Parts",
+    href: "#",
+  },
+  {
+    id:5,
+    title: "Appointment",
+    href: "#",
+  },
+  {
+    id:6,
+    title: "Contact Us",
+    href: "#",
+  }
 ];
